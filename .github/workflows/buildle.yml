@@ -2,7 +2,8 @@ name: Build Custom SeldonFrame
 
 on:
   workflow_dispatch:
-
+permissions:
+  packages: write   # <-- add this line
 jobs:
   build:
     runs-on: ubuntu-latest
